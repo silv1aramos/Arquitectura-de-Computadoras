@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href= "Styles.css">
+    <title>Unidad 2</title>
+</head>
+
+<body class="detalles">
+
+    <header>
+        <ul class="menu-container">
+          <l1 class="menu-item">Arquitectura de Computadoras</l1>
+        </ul>
+        <ul class="submenu-containerInicio">
+          <li class="menu-item"><a class = "link" href = "index.html">Inicio</a></li>
+          <li class="menu-item"><a class = "link" href = "Unidad 1.html">Unidad 1</a></li>
+          <li class="menu-item"><a class = "link" href = "Unidad 2.html">Unidad 2</a></li>
+          <li class="menu-item"><a class = "link" href = "Unidad 3.html">Unidad 3</a></li>
+          <li class="menu-item"><a class = "link" href = "Unidad 4.html">Unidad 4</a></li>
+          <li class="menu-item"><a class = "link" href = "Practicas.html">Practicas e Investigaciones</a></li>
+        </ul>
+      </header>
+
+      <div class="image-container">
+        <h1 class="page-title">Unidad 2</h1>
+      </div>
+
+      <div class="cont1">
+
+        <t class="subtitulo" id="2.1 Organización del procesador">2.1 Organización del procesador</t>
+        <div class = "linea-estilizada"><hr></div>
+        <br>
+        <p class="general">
+            La Unidad Central de Procesamiento (CPU) controla el funcionamiento del computador y lleva a cabo sus funciones de procesamiento de datos.
+            <br><br>
+            Esta constituido por:
+            <br><br>
+            •	Registros visibles para el usuario: Permiten al programador de lenguaje máquina o de ensamblador, minimizar las referencias a memoria principal por medio de la optimización de uso de registros.<br>
+            •	Registros de control: Utilizados por la unidad de control para controlar el funcionamiento del procesador y por programas privilegiados del SO para controlar la ejecución de programas.<br>
+            •	Unidad de Control: Le indica al resto del sistema como llevar a cabo las instrucciones de un programa.<br>
+            •	Unidad Aritmético-Lógica: Recibe los datos sobre los que efectúa operaciones de cálculo y comparaciones. Toma decisiones lógicas y devuelve luego el resultado.<br>
+            <img src="MediaU2/Procesador.jpg" alt="CPU" class="imagen">
+            <br><br><br>
+        </p>
+
+        <t class="subtitulo" id="2.2 Estructura de registros">2.2 Estructura de registros</t>
+        <div class = "linea-estilizada"><hr></div>
+        <br>
+        <p class="general">
+            Un registro es una memoria que está ubicada en el procesador y se encuentra en el nivel más alto en la jerarquía de memoria, por lo tanto tiene una alta velocidad  pero con poca capacidad para almacenar datos que va desde los 4 bits hasta los 64 bits dependiendo del procesador que se utilice.
+            <br><br>
+        </p>       
+        <t class = "sub2" id="1.2.2.1 Registros visibles para el usuario">1.2.2.1 Registros visibles para el usuario</t>
+        <br><br>
+
+        <p class="general">
+            Es aquel que puede ser referenciado por medio del lenguaje máquina que ejecuta la CPU.
+            <br><br>
+        </p>
+
+        <t class = "apartados">De uso general</t>
+        <br><br>
+        <p class="general">
+            Son aquellos que pueden guardar tanto datos como direcciones.
+            <br><br>
+            •	AX, AH, AL (Acumulador): Conserva el resultado temporal después de una operación aritmética o lógica.<br>
+            •	BX, BH, BL (Base): Guardan la dirección base de listas de datos en la memoria.<br>
+            •	CX, CH, CL (Contador): Contiene el conteo para ciertas instrucciones de corrimientos y rotaciones, de iteraciones en el ciclo loop y operaciones repetidas de cadenas.<br>
+            •	DX, DH, DL (Datos): Contiene la parte más significativa de un producto después de una multiplicación; la parte más significativa del dividendo antes de la división.<br>
+            <img src="MediaU2/Uso general.png" alt="Uso General" class="imagen">
+            <br><br>
+        </p>
+
+        <t class = "apartados">Datos</t>
+        <br><br>
+        <p class="general">
+            En algunos casos son de propósito general y pueden ser empleados por cualquier instrucción que lleve a cabo operaciones sobre los datos.
+            <br>
+            <img src="MediaU2/Datos.jpg" alt="Datos" class="imagen">
+            <br><br>
+        </p>
+
+        <t class = "apartados">Direcciones</t>
+        <br><br>
+        <p class="general">
+            Para que un CPU pueda almacenar y recuperar datos en RAM, debe tener la dirección de la memoria de la información. Esas operaciones que implican RAM usan registros de dirección de memoria. El CPU no realiza aritmética en estos registros; en cambio, los usa para ubicar datos que necesita.
+            <br>
+            <img src="MediaU2/Direcciones.jpg" alt="Direcciones" class="imagen">
+            <br><br>
+        </p>
+
+        <t class = "apartados">Códigos de Condición</t>
+        <br><br>
+        <p class="general">
+            Conocidos como indicadores o flags. Son bits activados por el procesador como resultado de determinadas operaciones.
+            <br>
+            <img src="MediaU2/Condicion.jpg" alt="CCondicion" class="imagen">
+            <br><br>
+        </p>
+
+        <t class = "apartados">Índice</t>
+        <br><br>
+        <p class="general">
+            •	Registro SI: El registro índice fuente de 16 bits, es requerido por algunas operaciones con cadenas de caracteres. El SI está asociado con el registro DS.<br>
+            •	Registro DI: El registro índice destino, también es requerido por algunas operaciones con cadenas de caracteres. El DI está asociado con el registro ES.<br>
+
+            <img src="MediaU2/Apuntadores e indices.png" alt="Indice" class="imagen">
+            <br><br>
+        </p>
+
+        <t class = "apartados">Segmento</t>
+        <br><br>
+        <p class="general">
+            •	CS (Código): Tiene la dirección lógica del segmento en que se encuentra el código de un programa.<br>
+            •	DS (Datos): Tiene la dirección lógica del segmento en que se encuentran los datos estáticos de un programa.<br>
+            •	ES (Extra): Se utiliza en ciertas operaciones del procesador para el manejo de cadenas.<br>
+            •	SS (Pila): Tiene la dirección lógica del segmento en que se encuentran la pila del sistema.<br>
+
+            <img src="MediaU2/Segmentos.png" alt="Segmento" class="imagen">
+            <br><br>
+        </p>
+
+        <t class = "apartados">Apuntadores</t>
+        <br><br>
+        <p class="general">
+            •	SP (Apuntador de pila): Contiene el desplazamiento con respecto al segmento de pila del tope de la pila del programa.<br>
+            •	BP (Apuntador de base): Contiene el desplazamiento con respecto al segmento de pila de datos almacenados en la pila de un programa. <br>
+            •	IP (Apuntador de instrucciones): Contiene siempre el desplazamiento con respecto al segmento de código de la localidad de memoria que contiene la siguiente instrucción que va a ejecutar el microprocesador.<br>
+
+
+            <img src="MediaU2/Apuntadores e indices.png" alt="Apuntadores" class="imagen">
+            <br><br>
+        </p>
+
+        <t class = "apartados">Banderas</t>
+        <br><br>
+        <p class="general">
+            Es un registro de 16 bits, de los cuales nueve sirven para indicar el estado actual de la máquina y el resultado del procesamiento. La tabla contiene 16 posiciones (de 0 a 15), que son los 16 bits del registro de banderas, numeradas de derecha a izquierda. La posición 0 la encontraremos a la derecha y la posición 15 a la izquierda.<br>
+
+            <img src="MediaU2/Banderas.png" alt="Apuntadores" class="imagen">
+            <br><br>
+        </p>
+
+        <t class = "apartados">Instrucción</t>
+        <br><br>
+        <p class="general">
+            El ciclo de instrucción es la secuencia de acciones que realiza la Unidad de Control para ejecutar una instrucción del programa almacenado en memoria. 
+            <br><br>
+            •	Fetch: Lee la próxima instrucción a ejecutarse en la memoria.<br>
+            •	Decode: Analiza el código binario de la instrucción para determinar que se debe realizar.<br>
+            •	Read: Se accede a la memoria para traer los operandos.<br>
+            •	Execute: Es la ejecución de la operación por parte de la ALU sobre los operandos.<br>
+            •	Write: Se escribe el resultado en el destino indicado en la instrucción.<br>
+
+            <img src="MediaU2/Instrucciones.png" alt="Instrucción" class="imagen">
+            <br><br>
+        </p>
+
+        <t class = "sub2" id="2.2.2 Registros de control y de estados">2.2.2 Registros de control y de estados</t>
+        <br><br>
+        <p class="general">
+            Utilizados por la Unidad de Control para controlar el funcionamiento del procesador y por programas privilegiados del SO para controlar la ejecución de programas.
+            <br><br>
+            Existen diversos tipos:
+            <br><br>
+            •	De datos: Guardan valores de datos numéricos como son los caracteres o pequeñas órdenes.<br>
+            •	De datos de memoria (MDR): Se encuentra en el procesador y está conectado al bus de datos.<br>
+            •	De direcciones: Guardan direcciones que son usadas para acceder a la memoria principal o primario, que solemos conocer como ROM o RAM.<br>
+            •	De propósito general (GPRS): Sirven para almacenar direcciones o datos generales.<br>
+            •	De propósito específico (SPRS): Guardan datos del sistema, como puede ser el registro de estado o el instruction pointer.<br>
+            •	De estado: Guardan valores reales cuya función es determinar cúando una instrucción debe ejecutarse o no.<br>
+
+            <img src="MediaU2/Registros.png" alt="Registros 1" class="imagen">
+            <br><br>
+
+            Asimismo, los registros de estado se dividen en:
+            <br><br>
+            •	De bandera o “flags”: Se encuentran en los procesadores Intel con Arquitectura x86. Hay dos sucesores: EFLAGS (32 bits de ancho) y RFLAGS (64 bits de ancho).<br>
+            •	De coma flotante: Representación en forma de fórmula, de números reales de distintos tamaños que sirven para realizar operaciones aritméticas.<br>
+            •	Constantes: Su cometido es guardar valores de sólo lectura como 0, 1 y pi.<br>
+            
+            <img src="MediaU2/Estado.png" alt="Registros 2" class="imagen">
+            <br><br>
+        </p>
+
+        <t class = "sub2" id="2.2.3 Ejemplo de registros de CPU reales">2.2.3 Ejemplo de registros de CPU reales</t>
+        <br><br>
+
+        <img src="MediaU2/Registro real.png" alt="CPU Real" class="imagen"> <br>
+        <br><br><br>
+
+        <t class="subtitulo" id="2.1 Organización del procesador">2.1 Organización del procesador</t>
+        <div class = "linea-estilizada"><hr></div>
+        <br>
+        <p class="general">
+            Llamado Ciclo de fetch-and-execute. Es el periodo que tarda el procesador en ejectuar una instrucción de lenguaje máquina.
+            <br><br>
+        </p>
+
+        <t class = "sub2" id="2.3.1 Ciclo Fetch-Decode-Execute">2.3.1 Ciclo Fetch-Decode-Execute</t>
+        <br><br>
+        <p class="general">
+            1. Busca la instrucción en la memoria principal.<br>
+            2. Decodifica la instrucción.<br>
+            3. Ejecuta la instrucción.<br>
+            4. Almacena o guarda resultados.<br>
+            <img src="MediaU2/Ciclo.png" alt="Fecth" class="imagen">
+            <br><br>
+        </p>
+
+        <t class = "sub2" id="2.3.2 Segmentación de instrucciones">2.3.2 Segmentación de instrucciones</t>
+        <br><br>
+        <p class="general">
+            Técnica que permite implementar el paralelismo a nivel de instrucción en un único procesador. 
+            <br><br>
+            El número de pasos dependientes varían según la arquitectura de la máquina. La segmentación RISC clásica comprende:
+            <br><br>
+            1. Lectura de instrucción.<br>
+            2. Decodificación de instrucción y lectura de registro.<br>
+            3. Ejecución<br>
+            4. Acceso a memoria.<br>
+            5. Escritura de vuelta en el registro.<br>
+            
+            <img src="MediaU2/Segmentacion.jpg" alt="Segmentación" class="imagen">
+            <br><br>
+        </p>
+
+        <t class = "sub2" id="2.3.3 Conjunto de instrucciones, características y funciones">2.3.3 Conjunto de instrucciones, características y funciones</t>
+        <br><br>
+        <p class="general">
+            El conjunto de instrucciones de una PC debe ser completo en el sentido de que se pueda construir un programa para evaluar una función computable usando una cantidad de memoria razonable y empleando un tiempo moderado.
+            <br><br>
+            Los juegos de instrucciones de igual manera, deben ser eficientes: las funciones más necesarias deben poder realizarse usando pocas instrucciones.
+            <br><br>
+            El conjunto de instrucciones de una máquina debe ser regular, es decir, debe ser simétrico y octogonal (deben poder combinarse en la medida de lo posible todas las operaciones con todos los tipos de datos y modos de direccionamiento).
+            <br><br>
+        </p>
+
+        <t class = "apartados">Tipos de instrucciones</t>
+        <br><br>
+        <p class="general">
+            Una máquina puede llegar a funcionar con un juego de instrucciones muy limitado, lo cual simplificaría los circuitos de la máquina. Sin embargo, tiene como consecuencia, programas demasiado complejos e ineficientes.
+            <br><br>
+            Es necesario encontrar un compromiso entre la simplicidad del hardware y del software. Un mínimo para llegar a ese compromiso se consigue con los tipos de instrucciones siguientes:
+            <br><br>
+            •	Instrucciones de transferencia de datos<br>
+            •	Instrucciones aritméticas<br>
+            •	Instrucciones lógicas<br>
+            •	Instrucciones de control del flujo del programa<br>
+            •	Instrucciones de E/S<br>
+            <img src="MediaU2/Instrucciones.png" alt="2.3.3" class="imagen">
+            <br><br>
+        </p>
+
+        <t class = "sub2" id="2.3.4 Modos de direccionamiento">2.3.4 Modos de direccionamiento</t>
+        <br><br>
+        <p class="general">
+            Un modo de direccionamiento especifica la forma de calcular la dirección de memoria efectiva de un operando mediante el uso de la información contenida en registros dentro de una instrucción de la máquina.
+            <br><br>
+            1.	Implícito. La dirección del operando se conoce implícitamente a través del código de operación.<br>
+            2.	Inmediato: El operando está especificado dentro de la instrucción misma.<br>
+            3.	Directo: La dirección efectiva del operando se encuentra en el campo de dirección de la instrucción.<br>
+            4.	Indirecto: El campo del operando contiene una dirección de memoria que apunta a la dirección efectiva del operando.<br>
+            5.	Relativo: El desplazamiento del campo de dirección se trata como un número en complemento a 2, relativo al contador de programa.<br>
+            6.	Con registro base: El campo de dirección contiene un desplazamiento desde la dirección almacenada en un registro base.<br>
+            7.	Absoluto: El campo del operando contiene la dirección física del operando en memoria.<br>
+            8.	Indexado: El campo de dirección referencia una dirección de memoria principal, y el registro contiene un desplazamiento desde esa dirección.<br>
+            9.	Autoincremento: La dirección del operando está en un registro que se incrementa después de acceder al operando.<br>
+            10.	 Autodecremento: Se decrementa un registro en el tamaño del operando para obtener la dirección del siguiente operando.<br>
+            <img src="MediaU2/Direccionamiento.png" alt="2.3.4" class="imagen">
+            <br><br><br>
+
+        </p>
+
+        <t class="subtitulo" id="2.4 Casos de estudio de CPU reales">2.4 Casos de estudio de CPU reales</t>
+        <div class = "linea-estilizada"><hr></div>
+        <br>
+        <t class = "apartados">Intel 80386</t>
+        <br><br>
+        <p class="general">
+            Está compuesto por la unidad de ejecución (que contiene ocho registros de 32 bits de propósito general y un barrel shifter de 64 bits) y la unidad de instrucciones.
+            <br><br>
+            Tiene registros de 32 bits en las siguientes categorías:
+            <br><br>
+            •	De propósito general<br>
+            •	De segmento<br>
+            •	Indicadores<br>
+            •	De control (nuevos en el 80386)<br>
+            •	De direcciones de sistema<br>
+            •	De depuración (nuevos en el 80386)<br>
+            •	De test (nuevos en el 80386)<br>
+            <img src="MediaU2/Intel.jpg" alt="2.3.4" class="imagen">
+            <br><br><br>
+
+        </p>
+
+      </div>
+
+
+      <div class="cont1">
+        <p class="general">
+          <b>Instituto Tecnológico de Saltillo</b>
+          <br>
+          Blvd. Venustiano Carranza, Priv. Tecnológico 2400, 25280 Saltillo, Coah.
+          <br>
+          <b> 
+            <a class="link2" href="https://saltillo.tecnm.mx/"> Visitar Página Web</a>
+            <br>
+            <a class="link2" href="https://www.facebook.com/TecNMcampusSaltillo/"> Visitar Página de Facebook</a>
+          </b>
+        </p>
+        <div class="footer">
+          <br>
+          &copy; 2024 - Silvia Guadalupe Ramos Mendoza
+        </div>
+       </div>
+       
+     <br>
+
+
+</body>
+
+</html>
