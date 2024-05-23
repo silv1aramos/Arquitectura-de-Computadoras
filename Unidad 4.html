@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href= "Styles.css">
+    <title>Unidad 4</title>
+</head>
+
+<body class="detalles">
+    <header>
+        <ul class="menu-container">
+          <l1 class="menu-item">Arquitectura de Computadoras</l1>
+        </ul>
+        <ul class="submenu-containerInicio">
+          <li class="menu-item"><a class = "link" href = "index.html">Inicio</a></li>
+          <li class="menu-item"><a class = "link" href = "Unidad 1.html">Unidad 1</a></li>
+          <li class="menu-item"><a class = "link" href = "Unidad 2.html">Unidad 2</a></li>
+          <li class="menu-item"><a class = "link" href = "Unidad 3.html">Unidad 3</a></li>
+          <li class="menu-item"><a class = "link" href = "Unidad 4.html">Unidad 4</a></li>
+          <li class="menu-item"><a class = "link" href = "Practicas.html">Practicas e Investigaciones</a></li>
+        </ul>
+      </header>
+
+      <div class="image-container">
+        <h1 class="page-title">Unidad 4</h1>
+      </div>
+
+
+      <div class = "cont1">
+
+        <t class="subtitulo" id="4.1 Aspectos básicos de la computación paralela">4.1 Aspectos básicos de la computación paralela</t>
+        <div class = "linea-estilizada"><hr></div>
+        <br>
+        <p class="general">
+            Es una forma de cómputo en la que muchas instrucciones se ejecutan simultáneamente, operando sobre el principio de que problemas grandes, a menudo se pueden dividir en unos más pequeños, que luego son resueltos simultáneamente.
+            <br><br>
+        </p>
+
+        <t class = "apartados">Ventajas</t>
+        <br><br>
+        <p class="general">
+            •	Permite ejecutar problemas de un orden y complejidad mayor.<br>
+            •	Permite la ejecución de varias instrucciones en simultáneo.<br>
+            •	Permite ejecutar el código de manera más rápida.<br>
+            •	Permite dividir una tarea en partes independientes.
+            <br><br>
+        </p>
+
+        <t class = "apartados">Desventajas</t>
+        <br><br>
+        <p class="general">
+            •	Mayor consumo de energía.<br>
+            •	Mayor dificultad a la hora de escribir programas.<br>
+            •	Altos costos por producción y mantenimiento.<br>
+            •	Retardos ocasionados por comunicación entre tareas.<br>
+
+            <img src="MediaU4/Comp Paralela.png" alt="4.1" class="imagen">
+            <br><br><br>
+        </p>
+
+        <t class="subtitulo" id="4.2 Tipos de computación paralela">4.2 Tipos de computación paralela</t>
+        <div class = "linea-estilizada"><hr></div>
+        <br>
+
+        <t class = "sub2" id="4.2.1 Clasificación">4.2.1 Clasificación</t>
+        <br><br>
+
+        <t class = "apartados">SISD (Single Instruction, Single Data)</t>
+        <br><br>
+        <p class="general">
+          Un único procesador se encarga de gestionar simultáneamente un algoritmo como una única fuente de datos. Ejecuta las instrucciones secuencialmente y puede o no ser capaz de realizar procesamiento en paralelo, dependiendo de su configuración.
+          <br>
+          <img src="MediaU4/SISD.png" alt="SISD" class="imagen">
+          <br><br>          
+        </p>
+
+        <t class = "apartados">MISD (Multiple Instruction, Single Data)</t>
+        <br><br>
+        <p class="general">
+          Los procesadores múltiples son estándar en las computadoras que utilizan Instrucción Múltiple, Datos Únicos. Pueden realizar simultáneamente muchas operaciones en el mismo lote de datos. La cantidad de operaciones se ve afectada por la cantidad de procesadores disponibles.
+          <br>
+          <img src="MediaU4/MISD.png" alt="MISD" class="imagen">
+          <br><br>
+        </p>
+
+        <t class = "apartados">SIMD (Single Instruction, Multiple Data)</t>
+        <br><br>
+        <p class="general">
+          Las PC que utilizan esta arquitectura, tienen múltiples procesadores que ejecutan instrucciones idénticas. Sin embargo, cada procesador proporciona las instrucciones con su colección única de datos.
+          <br>
+          <img src="MediaU4/SIMD.svg.png" alt="SIMD" class="imagen">
+          <br><br>
+        </p>
+
+        <t class = "apartados">MIMD (Multiple Instruction, Multiple Data)</t>
+        <br><br>
+        <p class="general">
+          Se caracterizan por la presencia de múltiples procesadores y cada uno de ellos es capaz de aceptar de forma independiente su flujo de instrucciones. Este tipo de computadoras tienen muchos procesadores y, además, cada CPU extrae datos de un flujo de datos diferente.
+          <br>
+          <img src="MediaU4/MIMD.svg.png" alt="MIMD" class="imagen">
+          <br><br>
+        </p>
+
+        <t class = "apartados">SPMD (Single Program, Multiple Data)</t>
+        <br><br>
+        <p class="general">
+          Cada uno de sus procesadores es responsable de ejecutar las mismas instrucciones. Es una programación de paso de mensajes utilizada en sistemas informáticos de memoria distribuida.
+          <br>
+          <img src="MediaU4/Single-Program-Multiple-Data.jpg" alt="SPMD" class="imagen">
+          <br><br>
+        </p>
+
+        <t class = "apartados">MPP (Massively Parallel Processing)</t>
+        <br><br>
+        <p class="general">
+          Se crea el Procesamiento Masivo en Paralelo para gestionar la ejecución coordinada de las operaciones del programa por parte de numerosos procesadores. Dado que cada CPU utiliza su sistema operativo y su memoria, este procesamiento coordinado se puede aplicar a diferentes secciones del programa.
+          <br>
+          <img src="MediaU4/MPP.png" alt="MPP" class="imagen">
+          <br><br>
+        </p>
+
+        <t class = "sub2" id="4.2.2 Arquitectura de computadoras secuenciales">4.2.2 Arquitectura de computadoras secuenciales</t>
+        <br><br>
+        <p class="general">
+          Las computadoras secuenciales procesan instrucciones de manera secuencial. En otras palabras, cada instrucción se ejecuta una tras otra. Esta arquitectura, se basa en el modelo de John Von Newman, que cuenta con componentes tales como CPU, memoria principal, bus y mecanismo de sincronización.
+          <br><br>
+        </p>
+
+        <t class = "apartados">Ventajas</t>
+        <br><br>
+        <p class="general">
+          •	Simplicidad: Estos sistemas son más fáciles de diseñar y entender. Siguen un flujo lógico paso a paso, lo que facilita su implementación.<br>
+          •	Menos problemas de control: La ejecución secuencial reduce la complejidad de los problemas de control, como la gestión de conflictos en el acceso a recursos compartidos.<br>
+          •	Facilidad de depuración: En comparación con las computadoras más complejas, las secuenciales son más fáciles de depurar y rastrear errores.
+          <br>
+          <img src="MediaU4/Secuencial.JPG" alt="4.2.2" class="imagen">
+          <br><br>
+        </p>
+
+        <t class = "sub2" id="4.2.3 Organización de direcciones de memoria">4.2.3 Organización de direcciones de memoria</t>
+        <br><br>
+        <p class="general">
+          Es un identificador para una localización de memoria con la cual un programa informático o un dispositivo de hardware pueden almacenar un dato para su posterior reutilización. Este direccionamiento puede considerarse desde dos puntos de vista:
+          <br><br>
+          •	Físico: Son los medios electrónicos usados en la PC para acceder a las posiciones de memoria. <br>
+          •	Lógico: Se refiere a la forma en que se expresan y guardan las direcciones.<br>
+          <br>
+          El sistema utilizado para representar las direcciones de memoria en el texto escrito, es el hexadecimal.
+          <br>
+          <img src="MediaU4/Direcciones de memoria.png" alt="4.2.3" class="imagen">
+          <br><br>
+        </p>
+
+        <t class="subtitulo" id="4.3 Sistemas de memoria (compartida)">4.3 Sistemas de memoria (compartida)</t>
+        <div class = "linea-estilizada"><hr></div>
+        <br>
+
+        <p class="general">
+          Es aquel tipo de memorias que puede ser accedida por múltiples programas, ya sea para comunicarse entre ellos o para evitar copias redundantes. Es un modo eficaz de pasar datos entre aplicaciones.
+          <br><br>
+          </p>
+
+        <t class = "apartados">Multiprocesadores</t>
+        <br><br>
+        <p class="general">
+        Hace referencia a los computadores que te permiten abrir programas en más de una CPU, por lo que puede ejecutar simultáneamente varios hilos pertenecientes a un mismo proceso o bien a procesos diferentes. 
+        <br><br>
+        Estas computadoras cuentan con problemas de diseño, derivados de que dos programas pueden ejecutarse simultáneamente y pueden interferir entre sí.
+        <br><br>
+        Existen 3 arquitecturas que resuelven estos problemas.
+        <br><br>
+        </p>
+
+        <t class = "apartados">Arquitectura UMA (Uniform Memory Access)</t>
+        <br><br>
+        <p class="general">
+          Todos los procesadores comparten toda la memoria de forma simétrica.
+        <br>
+        <img src="MediaU4/UMA.jpg" alt="UMA" class="imagen">
+          <br><br>
+        </p>
+
+        <t class = "apartados">Arquitectura NUMA (Non-Uniform Memory Access)</t>
+        <br><br>
+        <p class="general">
+          Cada procesador tiene acceso y control exclusivo a una parte de la memoria.
+        <br>
+        <img src="MediaU4/NUMA.jpg" alt="NUMA" class="imagen">
+          <br><br>
+        </p>
+
+        <t class = "apartados">Arquitectura COMA (Cache-Only Memory Access)</t>
+        <br><br>
+        <p class="general">
+          Cada procesador tiene acceso y control exclusivo a una parte de la memoria caché.
+        <br>
+        <img src="MediaU4/COMA.jpg" alt="COMA" class="imagen">
+          <br><br>
+        </p>
+
+        <t class = "sub2" id="4.3.1 Redes de interconexión dinámica (indirecta)">4.3.1 Redes de interconexión dinámica (indirecta)</t>
+        <br><br>
+
+        <p class="general">
+          Son redes que pueden cambiar la topología de comunicación durante la ejecución de los programas o entre dos ejecuciones de programas.
+          <br><br>
+        </p>
+
+        <t class = "apartados">Medio compartido</t>
+        <br><br>
+        <p class="general">
+          Se refiere a un tipo de red donde múltiples dispositivos comparten un único canal de comunicación para enviar datos. Varios dispositivos, como computadoras, servidores, impresoras, etc., están conectados a través de un medio compartido, como un cable Ethernet o una red inalámbrica.
+        <br>
+        <img src="MediaU4/Medio Compartido.png" alt="Medio Compartido" class="imagen">
+          <br><br>
+        </p>
+
+        <t class = "apartados">Redes conmutadas</t>
+        <br><br>
+        <p class="general">
+          La comunicación se realiza entre un host origen y uno destino. La transmisión de datos se realiza a través de una red de nodos intermedios. El proceso consta de tres fases: establecimiento de la conexión, transferencia de la información y liberación de la conexión.
+        <br><br>
+        Son utilizadas para comunicaciones a largas distancias, los nodos no se preocupan del contenido de los datos y los dispositivos finales son estaciones.
+        <br>
+        <img src="MediaU4/redes conmutadas.png" alt="Redes conmutadas" class="imagen">
+          <br><br>
+        </p>
+
+        <t class="subtitulo" id="4.4 Sistemas de memoria distribuida">4.4 Sistemas de memoria distribuida</t>
+        <div class = "linea-estilizada"><hr></div>
+        <br>
+
+        <t class = "apartados">Cluster</t>
+        <br><br>
+        <p class="general">
+          Es un sistema de procesamiento paralelo o distribuido. Consta de un conjunto de computadoras independientes, interconectadas entre sí, de tal manera que funcionan como un solo recurso computacional.
+          <br><br>
+          La Memoria Distribuida Compartida (DSM) es un tipo de implementación hardware y software, en la que cada nodo de un cluster tiene acceso a una amplia memoria compartida que se añade a la memoria limitada privada, no compartida, propia de cada nodo.
+          <br><br>
+          Cuenta con diversas ventajas:
+          <br><br>
+          •	Tiene mejor rendimiento que un sistema centralizado.<br>
+          •	Cualquier fallo que se presente en un nodo no afecta gravemente a los demás.<br>
+          •	Si un nodo falla, los datos quedan guardados en los demás nodos.
+          <br><br>
+          También, tiene desventajas:
+          <br><br>
+          •	Requieren mayor nivel de planificación, monitoreo y mantenimiento.<br>
+          •	Mayor costo de implementación.<br>
+          •	El rendimiento de todo el sistema depende del rendimiento de la red.
+        <br>
+        <img src="MediaU4/Cluster.png" alt="Cluster" class="imagen">
+          <br><br>
+        </p>
+
+        <t class = "sub2" id="4.4.1 Redes de interconexión estáticas">4.3.1 Redes de interconexión dinámica (indirecta)</t>
+        <br><br>
+        <p class="general">
+          Una red estática es una red cuya topología queda definida de manera definitiva y estable durante la construcción de la máquina paralela. La red simplemente une los diversos elementos de acuerdo a una configuración dada.
+          <br><br>
+          Emplean enlaces directos fijos entre los nodos. Una vez fabricado, estos nodos son difíciles de cambiar por lo que la escalabilidad de estas topologías es baja.
+          <br>
+          <img src="MediaU4/Interconexion.png" alt="4.4.1" class="imagen">
+          <br><br>
+        </p>
+
+        <t class="subtitulo" id="4.5 Casos para estudio">4.5 Casos para estudio</t>
+        <div class = "linea-estilizada"><hr></div>
+        <br>
+        <p class="general">
+          •	Arquitecturas multi core y multithreading en multi core.
+          <br>
+          <img src="MediaU4/Multicore.jpg" alt="4.5(1)" class="imagen">
+          <br><br>
+
+          •	Diseño y optimización de algoritmos.
+          <br>
+          <img src="MediaU4/algoritmo.png" alt="4.5(2)" class="imagen">
+          <br><br>
+          •	Patrones de diseño de algoritmos paralelos.
+          <br>
+          <img src="MediaU4/Patrones de diseño.png" alt="4.5(3)" class="imagen">
+          <br><br>
+          •	Laboratorios remotos para el acceso transparente a recursos de cómputo paralelo.
+          <br>
+          <img src="MediaU4/Lab Remoto.jpg" alt="4.5(4)" class="imagen">
+          <br><br>
+
+        </p>
+
+      </div>
+
+      <div class="cont1">
+        <p class="general">
+          <b>Instituto Tecnológico de Saltillo</b>
+          <br>
+          Blvd. Venustiano Carranza, Priv. Tecnológico 2400, 25280 Saltillo, Coah.
+          <br>
+          <b> 
+            <a class="link2" href="https://saltillo.tecnm.mx/"> Visitar Página Web</a>
+            <br>
+            <a class="link2" href="https://www.facebook.com/TecNMcampusSaltillo/"> Visitar Página de Facebook</a>
+          </b>
+        </p>
+        <div class="footer">
+          <br>
+          &copy; 2024 - Silvia Guadalupe Ramos Mendoza
+        </div>
+       </div>
+       
+     <br>
+
+</body>
+
+</html>
