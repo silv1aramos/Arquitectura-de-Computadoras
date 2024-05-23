@@ -1,0 +1,364 @@
+/* Header */
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    padding: 30px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+}
+
+.menu-container{
+    list-style-type: none;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.submenu-containerInicio{
+    list-style-type: none;
+    display: flex;
+    text-align: right;
+    width: 50%;
+
+}
+
+.submenu-containerPags{
+    list-style-type: none;
+    display: flex;
+    text-align: right;
+    width: 40%;
+}
+
+.chat-button{
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    background: url();
+    background-color: #055f48;
+    box-shadow: #ced5fc;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.logo{
+    height: 40%;
+}
+
+.menu-item{
+    font-family: 'Syncopate', sans-serif;
+    font-size: 10px;
+    margin-left: 2.5em;
+    color: #055f48;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.menu-item:hover{
+    color: #055f48;
+}
+
+.image-container{
+    height: 300px;
+    width: 100%;
+    background-color: #000000;
+    background-size: auto 100vw;
+    background-position: top left;
+    animation: bg-movement 40s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes bg-movement{
+    0%{
+        background-position: top left;
+    }
+    50%{
+        background-position: bottom right;
+    }
+    100%{
+        background-position: top left;
+    }
+}
+
+.page-title{
+    text-transform: uppercase;
+    color: #f2f2f2;
+    font-size: 40px;
+    font-family: 'Syncopate', sans-serif;
+    justify-content: center;
+}
+
+.post{
+    font-size: 20px;
+    width: 70%;
+    margin: 5rem auto;
+    line-height: 28px;
+}
+
+t.fuenteHeader{
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Body */
+
+body.detalles{
+    margin: 0;
+    background-image: url(More/background2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+
+/* Texto */
+
+p.general{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+   text-align: justify;  
+   width: 90%;
+   margin-left: 5%;
+   margin-right: 10%;
+   line-height: 2em;
+}
+
+t.subtitulo{
+    font-family: 'Teko', sans-serif;
+    font-weight: 200px;
+    font-style: normal;
+    margin-left: 5%;
+    font-size: 39px;
+    color: rgb(6, 206, 159);
+}
+
+t.sub2{
+    font-family: 'Teko', sans-serif;
+    font-weight: 200px;
+    font-style: normal;
+    margin-left: 5%;
+    text-decoration: underline;
+    color:rgb(23, 226, 118);
+    font-size: 30px;
+}
+
+t.sub3{
+    font-family: 'Teko', sans-serif;
+    font-weight: 200px;
+    margin-left: 5%;
+    text-decoration:wavy;
+    color:rgb(57, 244, 144);
+    font-size: 26px;
+}
+
+t.apartados{
+    font-family: 'Freeman', sans-serif;
+    font-weight: 100px;
+    font-style: normal;
+    margin-left: 5%;
+    text-decoration:wavy;
+    color:rgb(236, 238, 90);
+    font-size: 20px;
+}
+
+
+/* Contenedores */
+
+div.cont1{
+    border: none;
+     padding: 30px;
+    margin: 120px;
+    background-color: #000000d1;
+    
+}
+
+/* Detalles */
+
+div.linea-estilizada {
+    
+    height: 5px;
+    border: none;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 10%;
+    background-color: #055f48;;
+}
+
+ul.vineta{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    color: #000000; 
+   text-align: justify;  
+   width: 90%;
+   margin-left: 5%;
+   margin-right: 10%;
+}
+
+/* PDF */
+div.pdf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagenes */
+.imagen {
+    display: block; /* Muestra la imagen como bloque para ajustar el tamaÃ±o */
+    max-width: 40%; /* Ancho mÃ¡ximo de la imagen */
+    height: auto; /* Altura automÃ¡tica para mantener la proporciÃ³n */
+    margin-top: 20px; /* Espacio superior de la imagen */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffffcf;
+}
+
+/* Barra */
+
+a.menu-item{
+    font-family: 'Syncopate', sans-serif;
+    font-size: 12px;
+    margin-left: 2.5em;
+    color: #055f48;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Link */
+
+.link{
+    color:#055f48;
+    text-decoration: none;
+
+}
+
+.link2{
+    color:rgb(232, 234, 153);
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* Nav */
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    background: #055f48;
+}
+
+.menu > li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background: #d23d6a;
+    transition: all 0.3s;
+}
+
+/* Submenú */
+.submenu {
+    position: absolute;
+    background: #333333;
+    width: 200px; /* Cambiado a un valor fijo */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s; /* Cambiado a 0.5s */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    font: bold 110% monospace;
+}
+
+.menu li:hover > .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*Submenú del submenú*/
+.submenu .submenu {
+    left: 100%;
+    top: 0;
+    background: #444444; /* Añadido un fondo diferente para distinguir */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s; /* Cambiado a 0.5s */
+}
+
+.submenu li:hover > .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Footer */
+div.footer{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 100px;
+    font-style: normal;
+    margin-left: 5%;
+    text-align: center;
+    color:rgb(232, 234, 153);
+    font-size: 15px;
+}
