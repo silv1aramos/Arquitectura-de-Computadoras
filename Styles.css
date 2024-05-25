@@ -13,6 +13,14 @@ header{
     background-color: #000000;
 }
 
+#app {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
 .clase {
    // propiedades comunes a todos los medios aqui.
 }
