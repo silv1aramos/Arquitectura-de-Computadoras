@@ -13,16 +13,27 @@ header{
     background-color: #000000;
 }
 
-.box {
-    flex: 1 1 calc(50% - 10px); /* Esto hace que cada caja ocupe el 50% del ancho menos el margen */
-    margin: 10px; /* Agrega un margen entre las cajas */
+.clase {
+   // propiedades comunes a todos los medios aqui.
+}
+
+@media screen and (width <= 640px) {
+  .clase {
+    // propiedades para mobiles aqui.
   }
-  @media screen and (min-width: 768px) 
-  {
-    .box {
-      flex-basis: calc(33.33% - 10px); /* Cambia el tamaño de las cajas en pantallas más grandes */
-    }
+}  
+
+@media screen and (width > 640px) {
+  .clase {
+    // propiedades de escritorio aqui
   }
+} 
+
+@media print {
+  .clase {
+    // propiedades impresora aqui.
+  }
+} 
 
 .menu-container{
     list-style-type: none;
